@@ -1,2 +1,3 @@
-project task
-0x00-pagination
+# Pagination
+## Author
+- Maureen Oguche

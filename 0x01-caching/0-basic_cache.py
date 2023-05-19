@@ -1,19 +1,19 @@
 #!/usr/bin/env python3
-""" caching task """
+""" 0-basic_cache.py """
+
 from base_caching import BaseCaching
 
 
 class BasicCache(BaseCaching):
-    """ceching class that inherits from BaseCeching"""
+    """ Basic cache class """
+
     def put(self, key, item):
-        """ Add an item in the cache
-        """
+        """ Add item in cache """
         if key is None or item is None:
-            return
+            pass
         else:
             self.cache_data[key] = item
 
     def get(self, key):
-        """ a method to get the value to thr key passed"""
-        if key in self.cache_data:
-            return self.cache_data[key]
+        """ Get item from cache """
+        return self.cache_data.get(key)
